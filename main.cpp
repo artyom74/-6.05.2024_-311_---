@@ -67,7 +67,7 @@ node* insert(node* p, int k) // вставка ключа k в дерево с корнем p
 	if (!p) return new node(k);
 	if (k < p->key)
 		p->left = insert(p->left, k);
-	else
+	else 
 		p->right = insert(p->right, k);
 	return balance(p);
 }
